@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coleções | Calegario De Parfum</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/js/all.min.js"></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="logo.png" alt="Calegario De Parfum Logo">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="colecoes.html">Coleções</a></li>
+                    <li><a href="fragancias.html">Fragrâncias</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </nav>
+            <div class="header-icons">
+                <a href="busca.html"><i class="fas fa-search"></i></a>
+                <a href="minha-conta.html"><i class="fas fa-user"></i></a>
+                <a href="carrinho.html"><i class="fas fa-shopping-bag"></i><span class="cart-count">0</span></a>
+            </div>
+        </div>
+    </header>
+
+    <section class="breadcrumb">
+        <div class="container">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li>Coleções</li>
+            </ul>
+        </div>
+    </section>
+
+    
+    
+    <section class="collections-showcase">
+        <div class="container">
+            <!--<h1>Nossas Coleções</h1>
+            <p class="collections-intro">Descubra as coleções exclusivas da Calegario De Parfum, cada uma meticulosamente criada para evocar sensações e momentos únicos.</p>
+            -->
+            <div class="collection-category">
+                <div class="collection-header">
+                    <h2>Coleção Signature</h2>
+                    <p>Nossa linha premium, que reflete a quintessência da marca Calegario De Parfum.</p>
+                </div>
+                <div class="collection-grid">
+                    <div class="collection-item">
+                        <img src="perfum1.png" alt="Fragrância Audace">
+                        <h3>Audace</h3>
+                        <p>Notas de bergamota, patchouli e âmbar</p>
+                        <p class="price">R$ 690</p>
+                        <a href="produto-audace.html" class="btn-secondary">Ver Detalhes</a>
+                    </div>
+                    <div class="collection-item">
+                        <img src="perfum2.png" alt="Fragrância Élégance">
+                        <h3>Élégance</h3>
+                        <p>Notas de jasmim, íris e baunilha</p>
+                        <p class="price">R$ 720</p>
+                        <a href="produto-elegance.html" class="btn-secondary">Ver Detalhes</a>
+                    </div>
+                    <div class="collection-item">
+                        <img src="perfum3.png" alt="Fragrância Mystique">
+                        <h3>Mystique</h3>
+                        <p>Notas de sândalo, cedro e almíscar</p>
+                        <p class="price">R$ 750</p>
+                        <a href="produto-mystique.html" class="btn-secondary">Ver Detalhes</a>
+                    </div>
+                </div>
+            </div>
+            <!--
+            <div class="collection-category">
+                <div class="collection-header">
+                    <h2>Coleção Elementos</h2>
+                    <p>Inspirada nos quatro elementos da natureza, trazendo a essência de cada um para seus momentos.</p>
+                </div>
+                <div class="collection-grid">
+                    <div class="collection-item">
+                        <img src="elemento-agua.png" alt="Fragrância Água">
+                        <h3>Água</h3>
+                        <p>Notas de algas marinhas, sal marinho e âmbar</p>
+                        <p class="price">R$ 580</p>
+                        <a href="produto-agua.html" class="btn-secondary">Ver Detalhes</a>
+                    </div>
+                    <div class="collection-item">
+                        <img src="elemento-fogo.png" alt="Fragrância Fogo">
+                        <h3>Fogo</h3>
+                        <p>Notas de pimenta negra, cardamomo e âmbar vermelho</p>
+                        <p class="price">R$ 580</p>
+                        <a href="produto-fogo.html" class="btn-secondary">Ver Detalhes</a>
+                    </div>
+                    <div class="collection-item">
+                        <img src="elemento-terra.png" alt="Fragrância Terra">
+                        <h3>Terra</h3>
+                        <p>Notas de patchouli, musgo de carvalho e vetiver</p>
+                        <p class="price">R$ 580</p>
+                        <a href="produto-terra.html" class="btn-secondary">Ver Detalhes</a>
+                    </div>
+                    <div class="collection-item">
+                        <img src="elemento-ar.png" alt="Fragrância Ar">
+                        <h3>Ar</h3>
+                        <p>Notas de lavanda, néroli e alecrim</p>
+                        <p class="price">R$ 580</p>
+                        <a href="produto-ar.html" class="btn-secondary">Ver Detalhes</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="collection-category">
+                <div class="collection-header">
+                    <h2>Coleção Sazonal</h2>
+                    <p>Uma linha que captura a essência de cada estação do ano com fragrâncias limitadas.</p>
+                </div>
+                <div class="collection-grid">
+                    <div class="collection-item">
+                        <img src="sazonal-verao.png" alt="Fragrância Verão">
+                        <h3>Verão</h3>
+                        <p>Notas de coco, ylang-ylang e monoi</p>
+                        <p class="price">R$ 540</p>
+                        <a href="produto-verao.html" class="btn-secondary">Ver Detalhes</a>
+                    </div>
+                    <div class="collection-item">
+                        <img src="sazonal-outono.png" alt="Fragrância Outono">
+                        <h3>Outono</h3>
+                        <p>Notas de maçã, canela e madeira de cedro</p>
+                        <p class="price">R$ 540</p>
+                        <a href="produto-outono.html" class="btn-secondary">Ver Detalhes</a>
+                    </div>
+                    <div class="collection-item">
+                        <img src="sazonal-inverno.png" alt="Fragrância Inverno">
+                        <h3>Inverno</h3>
+                        <p>Notas de baunilha, café e tonka</p>
+                        <p class="price">R$ 540</p>
+                        <a href="produto-inverno.html" class="btn-secondary">Ver Detalhes</a>
+                    </div>
+                    <div class="collection-item">
+                        <img src="sazonal-primavera.png" alt="Fragrância Primavera">
+                        <h3>Primavera</h3>
+                        <p>Notas de peônia, lírio do vale e muguet</p>
+                        <p class="price">R$ 540</p>
+                        <a href="produto-primavera.html" class="btn-secondary">Ver Detalhes</a>
+                    </div>
+                </div>
+            </div> -->
+        </div>
+    </section>
+
+    <section class="newsletter">
+        <div class="container">
+            <h2>Receba Novidades</h2>
+            <p>Inscreva-se para receber informações sobre lançamentos e ofertas exclusivas.</p>
+            <form id="newsletter-form">
+                <input type="email" placeholder="Seu e-mail" required>
+                <button type="submit" class="btn-primary">Inscrever</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-columns">
+                <div class="footer-column">
+                    <h4>Calegario De Parfum</h4>
+                    <img src="logo.png" alt="Calegario De Parfum Logo" class="footer-logo">
+                    <p>Fragrâncias exclusivas que contam histórias e despertam emoções.</p>
+                </div>
+                <div class="footer-column">
+                    <h4>Links Rápidos</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="colecoes.html">Coleções</a></li>
+                        <li><a href="fragancias.html">Fragrâncias</a></li>
+                        <li><a href="sobre.html">Sobre</a></li>
+                        <li><a href="contato.html">Contato</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Suporte</h4>
+                    <ul>
+                        <li><a href="faq.html">Perguntas Frequentes</a></li>
+                        <li><a href="envio.html">Envio e Entrega</a></li>
+                        <li><a href="devolucoes.html">Política de Devoluções</a></li>
+                        <li><a href="privacidade.html">Política de Privacidade</a></li>
+                        <li><a href="termos.html">Termos e Condições</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Contato</h4>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> Av. Paulista, 1000, São Paulo - SP</li>
+                        <li><i class="fas fa-phone"></i> +55 (11) 99999-9999</li>
+                        <li><i class="fas fa-envelope"></i> contato@cgparfum.com.br</li>
+                    </ul>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-pinterest"></i></a>
+                        <a href="#"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 Calegario De Parfum. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

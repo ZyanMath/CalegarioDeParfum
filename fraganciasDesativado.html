@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fragrâncias | Calegario De Parfum</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/js/all.min.js"></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="logo.png" alt="Calegario De Parfum Logo">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="colecoes.html">Coleções</a></li>
+                    <li><a href="fragancias.html">Fragrâncias</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </nav>
+            <div class="header-icons">
+                <a href="busca.html"><i class="fas fa-search"></i></a>
+                <a href="minha-conta.html"><i class="fas fa-user"></i></a>
+                <a href="carrinho.html"><i class="fas fa-shopping-bag"></i><span class="cart-count">0</span></a>
+            </div>
+        </div>
+    </header>
+
+    <section class="breadcrumb">
+        <div class="container">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li>Fragrâncias</li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="fragrances-catalog">
+        <div class="container">
+            <div class="catalog-header">
+                <h1>Nossas Fragrâncias</h1>
+                <p>Explore nossa seleção de perfumes exclusivos criados com ingredientes de alta qualidade.</p>
+            </div>
+
+            <div class="filter-section">
+                <div class="filter-options">
+                    <div class="filter-group">
+                        <label>Filtrar por:</label>
+                        <select id="filter-collection">
+                            <option value="">Todas as Coleções</option>
+                            <option value="signature">Signature</option>
+                            <option value="elementos">Elementos</option>
+                            <option value="sazonal">Sazonal</option>
+                        </select>
+                    </div>
+                    <div class="filter-group">
+                        <select id="filter-scent">
+                            <option value="">Todos os Perfis</option>
+                            <option value="floral">Floral</option>
+                            <option value="amadeirado">Amadeirado</option>
+                            <option value="oriental">Oriental</option>
+                            <option value="frescor">Frescor</option>
+                            <option value="gourmand">Gourmand</option>
+                        </select>
+                    </div>
+                    <div class="filter-group">
+                        <select id="filter-price">
+                            <option value="">Todos os Preços</option>
+                            <option value="1">Até R$ 500</option>
+                            <option value="2">R$ 500 - R$ 700</option>
+                            <option value="3">Acima de R$ 700</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="filter-sort">
+                    <label>Ordenar por:</label>
+                    <select id="sort-option">
+                        <option value="relevance">Relevância</option>
+                        <option value="price-asc">Preço: Menor para Maior</option>
+                        <option value="price-desc">Preço: Maior para Menor</option>
+                        <option value="name-asc">Nome: A-Z</option>
+                        <option value="name-desc">Nome: Z-A</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="products-count">
+                <p>Exibindo <span id="products-showing">11</span> fragrâncias</p>
+            </div>
+
+            <div class="products-grid">
+                <div class="product-card" data-collection="signature" data-scent="oriental">
+                    <img src="perfum1.png" alt="Fragrância Audace">
+                    <div class="product-info">
+                        <h3>Audace</h3>
+                        <div class="product-meta">
+                            <span class="product-collection">Signature</span>
+                            <span class="product-scent">Oriental</span>
+                        </div>
+                        <p>Notas de bergamota, patchouli e âmbar</p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <p class="price">R$ 690</p>
+                        <div class="product-buttons">
+                            <a href="produto-audace.html" class="btn-secondary">Ver Detalhes</a>
+                            <button class="add-to-cart" data-name="Audace" data-price="690" data-image="perfum1.png"><i class="fas fa-shopping-bag"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card" data-collection="signature" data-scent="floral">
+                    <img src="perfum2.png" alt="Fragrância Élégance">
+                    <div class="product-info">
+                        <h3>Élégance</h3>
+                        <div class="product-meta">
+                            <span class="product-collection">Signature</span>
+                            <span class="product-scent">Floral</span>
+                        </div>
+                        <p>Notas de jasmim, íris e baunilha</p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="price">R$ 720</p>
+                        <div class="product-buttons">
+                            <a href="produto-elegance.html" class="btn-secondary">Ver Detalhes</a>
+                            <button class="add-to-cart" data-name="Élégance" data-price="720" data-image="perfum2.png"><i class="fas fa-shopping-bag"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card" data-collection="signature" data-scent="amadeirado">
+                    <img src="perfum3.png" alt="Fragrância Mystique">
+                    <div class="product-info">
+                        <h3>Mystique</h3>
+                        <div class="product-meta">
+                            <span class="product-collection">Signature</span>
+                            <span class="product-scent">Amadeirado</span>
+                        </div>
+                        <p>Notas de sândalo, cedro e almíscar</p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                        <p class="price">R$ 750</p>
+                        <div class="product-buttons">
+                            <a href="produto-mystique.html" class="btn-secondary">Ver Detalhes</a>
+                            <button class="add-to-cart" data-name="Mystique" data-price="750" data-image="perfum3.png"><i class="fas fa-shopping-bag"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card" data-collection="elementos" data-scent="frescor">
+                    <img src="elemento-agua.png" alt="Fragrância Água">
+                    <div class="product-info">
+                        <h3>Água</h3>
+                        <div class="product-meta">
+                            <span class="product-collection">Elementos</span>
+                            <span class="product-scent">Frescor</span>
+                        </div>
+                        <p>Notas de algas marinhas, sal marinho e âmbar</p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                        <p class="price">R$ 580</p>
+                        <div class="product-buttons">
+                            <a href="produto-agua.html" class="btn-secondary">Ver Detalhes</a>
+                            <button class="add-to-cart" data-name="Água" data-price="580" data-image="elemento-agua.png"><i class="fas fa-shopping-bag"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Mais produtos aqui seguindo o mesmo padrão... -->
+            </div>
+
+            <div class="pagination">
+                <a href="#" class="active">1</a>
+                <a href="#">2</a>
+                <a href="#">3</a>
+                <a href="#" class="next"><i class="fas fa-chevron-right"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <section class="fragrance-finder">
+        <div class="container">
+            <div class="finder-content">
+                <h2>Encontre Sua Fragrância Ideal</h2>
+                <p>Responda algumas perguntas e descubra qual perfume combina com sua personalidade.</p>
+                <a href="fragrance-finder.html" class="btn-primary">Começar Agora</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="newsletter">
+        <div class="container">
+            <h2>Receba Novidades</h2>
+            <p>Inscreva-se para receber informações sobre lançamentos e ofertas exclusivas.</p>
+            <form id="newsletter-form">
+                <input type="email" placeholder="Seu e-mail" required>
+                <button type="submit" class="btn-primary">Inscrever</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-columns">
+                <div class="footer-column">
+                    <h4>Calegario De Parfum</h4>
+                    <img src="logo.png" alt="Calegario De Parfum Logo" class="footer-logo">
+                    <p>Fragrâncias exclusivas que contam histórias e despertam emoções.</p>
+                </div>
+                <div class="footer-column">
+                    <h4>Links Rápidos</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="colecoes.html">Coleções</a></li>
+                        <li><a href="fragancias.html">Fragrâncias</a></li>
+                        <li><a href="sobre.html">Sobre</a></li>
+                        <li><a href="contato.html">Contato</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Suporte</h4>
+                    <ul>
+                        <li><a href="faq.html">Perguntas Frequentes</a></li>
+                        <li><a href="envio.html">Envio e Entrega</a></li>
+                        <li><a href="devolucoes.html">Política de Devoluções</a></li>
+                        <li><a href="privacidade.html">Política de Privacidade</a></li>
+                        <li><a href="termos.html">Termos e Condições</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Contato</h4>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> Av. Paulista, 1000, São Paulo - SP</li>
+                        <li><i class="fas fa-phone"></i> +55 (11) 99999-9999</li>
+                        <li><i class="fas fa-envelope"></i> contato@cgparfum.com.br</li>
+                    </ul>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-pinterest"></i></a>
+                        <a href="#"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 Calegario De Parfum. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/catalog.js"></script>
+</body>
+</html>
